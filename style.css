@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+:root {
+  --color-pale-blue: hsl(225, 100%, 94%);
+  --color-pale-blue-2: hsl(225, 100%, 98%);
+  --color-desat-blue: hsl(224, 23%, 55%);
+  --color-bright-blue: hsl(245, 75%, 52%);
+  --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background: url("./images/pattern-background-desktop.svg") var(--color-pale-blue);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50vh;
+  margin: 2rem;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.card__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__meta {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 5rem;
+  gap: 1rem;
+}
+
+.card__title {
+  color: var(--color-dark-blue);
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.card__desc {
+  color: var(--color-desat-blue);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card__pricing {
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+  margin-right: auto;
+}
+
+.card__plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  background: var(--color-pale-blue-2);
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.card__plan::after, .card__plan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  height: 1px;
+  width: 90%;
+  background: var(--color-pale-blue);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0.35;
+}
+
+.card__plan::before {
+  top: 10%;
+}
+
+.card__plan::after {
+  top: 90%;
+}
+
+.card__heading {
+  font-size: 1.8rem;
+  color: var(--color-dark-blue);
+  font-weight: 700;
+}
+
+.card__price {
+  color: var(--color-desat-blue);
+  font-size: 1.5rem;
+}
+
+.card__cta {
+  display: block;
+  text-decoration: none;
+}
+
+.cta--violet {
+  color: var(--color-bright-blue);
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.cta--primary {
+  width: 100%;
+  background: var(--color-bright-blue);
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1.5rem 1rem 0 rgba(40, 27, 187, 0.125);
+          box-shadow: 0 1.5rem 1rem 0 rgba(40, 27, 187, 0.125);
+  margin-block: 1rem;
+}
+
+.cta--secondary {
+  color: var(--color-desat-blue);
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
